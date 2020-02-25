@@ -6,7 +6,7 @@ const config = require('./config')[testTarget]
 
 console.log(`Testing ${testTarget} repository`)
 
-const url = `${config.baseUrl}/${config.org}/${config.repo}`
+const url = `${config.baseUrl}/repos/${config.org}/${config.repo}`
 const headers = {
   'Accept': 'application/vnd.github.v3+json',
   'User-Agent': 'node.js'
